@@ -7,7 +7,7 @@ namespace Eventos1
         public static void NotificarCambioNombre(string msg)
         {
             //imprimos mensaje aviso.
-            Console.WriteLine("¡El nombre del empleado a cambiado!");
+            Console.WriteLine("¡El nombre del empleado ha cambiado!");
             Console.WriteLine(msg);
         }
 

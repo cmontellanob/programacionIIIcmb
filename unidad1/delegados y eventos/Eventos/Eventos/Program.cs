@@ -20,18 +20,24 @@ namespace Eventos
             {
                 Operaciones o = new Operaciones();
                 o.CuandoRecibaMultiplosCinco+= RecibeMultiploCinco;// nos estamos suscribiendo a eventoy mandandoalmanejador de eventos
+                o.CuandoRecibaMultiplosCinco += RecibeMultiploCinco2;// nos estamos suscribiendo a eventoy mandandoalmanejador de eventos
 
-                int res = o.Sumar(4, 3);
+                int a,b;
+                a = int.Parse(Console.ReadLine());
+                b = int.Parse(Console.ReadLine());
+                int res = o.Sumar(a, b);
                 Console.WriteLine("La suma es = {0}", res);
-                res = o.Sumar(7, 8);
-            Console.WriteLine("La suma es = {0}", res);
-            Console.ReadKey();
+                Console.ReadKey();
             }
             static void RecibeMultiploCinco (int n) // Manejador de Evento
             {
                 Console.WriteLine("Se obtuvo un multiplo de cinco valor: {0}",n);
             }
-      }
+            static void RecibeMultiploCinco2(int n) // Manejador de Evento
+            {
+            Console.WriteLine("otro cinco valor: {0}", n);
+            }
+    }
 
     
 }
