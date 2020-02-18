@@ -12,26 +12,35 @@ namespace Ordenacion
         {
             // crear un arreglo de int, double y char
             int[] intArray = { 3, 6, 1, 4, 2, 5 };
+            double[] doubleArray = { 4.1, 1.2, 1.1, 2.4, 6.5, 3.6, 7.7 };
+            char[] charArray = { 'H', 'O', 'L', 'A' };
+            
             Console.WriteLine("Arreglo inicial:");
             Mostrar(intArray);
-            double[] doubleArray = { 1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7 };
-            char[] charArray = { 'H', 'O', 'L', 'A' };
             Console.WriteLine("Arreglo ordenado:");
             Ordenar(intArray);
             Mostrar(intArray);
-            //Console.WriteLine("doubleArray contiene:");
-            //MuestraArreglo(doubleArray);
-            //Console.WriteLine("charArray contiene:");
-            //MuestraArreglo(charArray);
+            Console.WriteLine("Arreglo inicial:");
+            Mostrar(doubleArray);
+            Console.WriteLine("Arreglo ordenado:");
+            Ordenar(doubleArray);
+            Mostrar(doubleArray);
+            Console.WriteLine("Arreglo inicial:");
+            Mostrar(charArray);
+            Console.WriteLine("Arreglo ordenado:");
+            Ordenar(charArray);
+            Mostrar(charArray);
+
             Console.ReadKey();
         }
-        private static void Mostrar(int[] arreglo)
+        private static void Mostrar<T>(T[] arreglo)
         {
-            foreach (int element in arreglo)
+            foreach (T element in arreglo)
                 Console.Write(element + " ");
             Console.WriteLine("\n");
         }
-        private static void Ordenar(int[] a)
+        private static void Ordenar<T>(T[] a)
+            where T : IComparable<T>
         {
             for (int j = 0; j < a.Length; j++)
             {
@@ -39,7 +48,7 @@ namespace Ordenacion
                 {
                     if (a[i].CompareTo(a[i+1]) < 0)
                     {
-                        int aux = a[i];
+                        T aux = a[i];
                         a[i] = a[i + 1];
                         a[i + 1] = aux;
                     }
