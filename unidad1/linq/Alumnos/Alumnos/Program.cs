@@ -13,12 +13,15 @@ namespace Alumnos
             Alumno[] listaalumnos = new Alumno[8];
             InsertarTodos(listaalumnos);
             int opcion = 0;
-            while (opcion!=3)
+            while (opcion!=5)
             {
                 Console.Clear();
                 Console.WriteLine("1.- Insertar Alumno");
                 Console.WriteLine("2.- Mostrar Alumnos");
-                Console.WriteLine("3.- Salir");
+                Console.WriteLine("3.- Mostrar Alumnas");
+                Console.WriteLine("4.- Mostrar Alumnos ordenados alfabeticamente por nombre");
+
+                Console.WriteLine("5.- Salir");
                 Console.Write("Introduzca opcion ");
                 opcion= int.Parse(Console.ReadLine());
 
@@ -30,6 +33,10 @@ namespace Alumnos
                     case 2:
                         Mostrar(listaalumnos);
                         break;
+                    case 3:
+                        MostrarAlumnas(listaalumnos);
+                        break;
+
                     default:
                         break;
                 }
@@ -77,6 +84,17 @@ namespace Alumnos
             {
                 if (a!=null)
                 Console.WriteLine("{0} {1} {2} {3} {4}",a.nombre,a.primerapellido,a.segundoapellido,a.ci,a.edad);
+            }
+            Console.ReadKey();
+
+        }
+        static void MostrarAlumnas(Alumno[] listaalumnos)
+        {
+            foreach (Alumno a in listaalumnos)
+            {
+                if (a != null)
+                    if (a.sexo=="F")
+                    Console.WriteLine("{0} {1} {2} {3} {4}", a.nombre, a.primerapellido, a.segundoapellido, a.ci, a.edad);
             }
             Console.ReadKey();
 
