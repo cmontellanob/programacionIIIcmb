@@ -36,6 +36,10 @@ namespace Alumnos
                     case 3:
                         MostrarAlumnas(listaalumnos);
                         break;
+                    case 4:
+                        Ordenar(listaalumnos);
+                        break;
+
 
                     default:
                         break;
@@ -74,8 +78,8 @@ namespace Alumnos
             listaalumnos[3] = new Alumno("Kassandra", "Cuellar", "Almendras", "7512719", "F", 21);
             listaalumnos[4] = new Alumno("Danna", "Colque", "Soliz", "65498512", "F", 18);
             listaalumnos[5] = new Alumno("Jhoselin", "Choque", "Ajalla", "12931915", "F", 19);
-            listaalumnos[5] = new Alumno("Yerson", "Mallcu", "Lisarazu", "123456789", "M", 26);
-            listaalumnos[5] = new Alumno("Manuel", "Quispe", "Calcina", "8565058", "M", 20);
+            listaalumnos[6] = new Alumno("Yerson", "Mallcu", "Lisarazu", "123456789", "M", 26);
+            listaalumnos[7] = new Alumno("Manuel", "Quispe", "Calcina", "8565058", "M", 20);
         }
 
         static void Mostrar(Alumno[] listaalumnos)
@@ -98,6 +102,23 @@ namespace Alumnos
             }
             Console.ReadKey();
 
+        }
+        public static void Ordenar(Alumno[] listaalumnos)
+            
+        {
+            for (int j = 0; j < listaalumnos.Length; j++)
+            {
+                for (int i = 0; i < listaalumnos.Length - 1 - j; i++)
+                {
+                    if (listaalumnos[i].nombre.CompareTo(listaalumnos[i + 1].nombre) > 0)
+                    {
+                        Alumno  aux = listaalumnos[i];
+                        listaalumnos[i] = listaalumnos[i + 1];
+                        listaalumnos[i + 1] = aux;
+                    }
+                }
+            }
+            Mostrar(listaalumnos);
         }
     }
 }
