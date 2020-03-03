@@ -18,7 +18,5 @@ namespace Linq1
             }
             Console.ReadKey();
         }
-
-        
     }
 }
