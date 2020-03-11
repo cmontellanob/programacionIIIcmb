@@ -10,13 +10,13 @@ namespace CompararMetodosOrdenacion
     {
         static void Main(string[] args)
         {
-            int[] arreglo;
+            int[] arreglo=new int[16];
 
             LlenarArreglo(arreglo, 16);
 
             TimeSpan Incio = new TimeSpan(DateTime.Now.Ticks);
 
-            QuickSort();
+            //MEtodo de Ordenacion
 
             TimeSpan Final = new TimeSpan(DateTime.Now.Ticks);
             
@@ -30,6 +30,12 @@ namespace CompararMetodosOrdenacion
         private static void LlenarArreglo(int[] arreglo, int n)
         {
             // llenar el arreglo con numeros aleatorios
+            Random numero = new Random();
+            for (int i=0;i<n;i++)
+            {
+                arreglo[i] = numero.Next(0, n);
+            }
+
         }
     }
 }
