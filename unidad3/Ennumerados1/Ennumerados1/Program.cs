@@ -12,7 +12,7 @@ namespace Ennumerados1
         static void Main(string[] args)
         {
                 Modalidad m = Modalidad.Treboles;
-                System.Console.WriteLine(m); // Visualiza Treboles
+                System.Console.WriteLine((int)m); // Visualiza Treboles
             Console.ReadKey();
 
         }

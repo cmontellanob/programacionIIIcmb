@@ -17,7 +17,7 @@ namespace Ennumerados
 
         static void Main(string[] args)
         {
-        Console.WriteLine((int) DiasSemana.Lunes);
+        Console.WriteLine( DiasSemana.Lunes);
         Console.WriteLine((int) DiasSemana.Viernes);
         }
     }
