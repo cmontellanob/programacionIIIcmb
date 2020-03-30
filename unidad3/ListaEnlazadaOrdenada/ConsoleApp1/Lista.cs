@@ -28,6 +28,8 @@ namespace ConsoleApp1
                 else
                 {
                     Nodo aux = Actual;
+                    
+
                     while (aux.Siguiente != null)
                     {
                         aux = aux.Siguiente;

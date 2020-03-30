@@ -16,9 +16,8 @@ namespace Listas
                 Console.WriteLine("1. Insertar");
                 Console.WriteLine("2. Eliminar");
                 Console.WriteLine("3. Mostrar");
-                Console.WriteLine("4. Ordenar");
-
-                Console.WriteLine("5. Salir");
+     
+                Console.WriteLine("4. Salir");
 
                 opcion = int.Parse(Console.ReadLine());
                 switch (opcion)
@@ -35,11 +34,9 @@ namespace Listas
                         Console.ReadKey();
                         break;
                     case 3:
-                        break;
-                    case 4:
                         foreach (int o in l)
                         {
-                            Console.Write("{0 }", o);
+                            Console.Write("{0}     ", o);
                         }
 
                         Console.ReadKey();
