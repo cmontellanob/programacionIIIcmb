@@ -44,25 +44,105 @@ namespace arboles
 
 
             }
-        //public string eliminar()
-        //{
-
-        //}
-        private void PreOrden(Nodo aux )
+        }
+        public void eliminar(String valor)
+        {
+            if (raiz == null)
+                Console.WriteLine("el arbol esta vacio");
+            else
             {
-                Preorden
+                Nodo aux = raiz;
+                Nodo ant = null;
+                while (valor!=aux.info && aux != null)
+                {
+                    if (valor.CompareTo(aux.info) >= 0)
+                    {
+                        ant = aux;
+                        aux = aux.der;
+                    }
+                    else
+                    {
+                        ant = aux;
+                        aux = aux.izq;
+                    }
+                }
+                // en ant tengo el nodo anterior
+                if (valor==aux.info)
+                {
+                    // lo encontro
+                    if (valor.CompareTo(ant.info) >= 0)
+                    {
+                        ant.der = aux.der;
+                    }
+                    else
+                    {
+                        ant.izq = aux.izq;
+                        Nodo hijo = aux.izq;
+                        while (hijo.der!=null)
+                        {
+                            hijo = hijo.der;
+                        }
+                        hijo.der = aux.der;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("No se encontro al elemento");
+                }
+
+
             }
 
-        public string mostrarPreOrden()
+        }
+        private void PreOrden(Nodo aux )
         {
+            if (aux!=null)
+            {
+                Console.Write("{0} ",aux.info);
+                PreOrden(aux.izq);
+                PreOrden(aux.der);
+            }
+            
+        }
+
+         public void mostrarPreOrden()
+         {
+            Nodo aux = raiz;
+            PreOrden(aux);
+         }
+
+        private void InOrden(Nodo aux)
+        {
+            if (aux != null)
+            {
+                InOrden(aux.izq);
+                Console.Write("{0} ", aux.info);
+                InOrden(aux.der);
+            }
 
         }
-        public string mostrarInOrden()
+        public void mostrarInOrden()
+         {
+            Nodo aux = raiz;
+            InOrden(aux);
+        }
+        private void PosOrden(Nodo aux)
         {
+            if (aux != null)
+            {
+                PosOrden(aux.izq);
+                PosOrden(aux.der);
+                Console.Write("{0} ", aux.info);
+
+            }
 
         }
-        public string mostrarPostOrden()
-        {
+
+
+        public void mostrarPosOrden()
+         {
+            Nodo aux = raiz;
+            PosOrden(aux);
 
         }
 
