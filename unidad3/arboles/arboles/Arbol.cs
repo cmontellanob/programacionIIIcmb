@@ -73,6 +73,12 @@ namespace arboles
                     if (valor.CompareTo(ant.info) >= 0)
                     {
                         ant.der = aux.der;
+                        Nodo hijo = aux.der;
+                        while (hijo.izq != null)
+                        {
+                            hijo = hijo.izq;
+                        }
+                        hijo.izq = aux.izq;
                     }
                     else
                     {

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grafosmatrices", "grafosmatrices\grafosmatrices.csproj", "{37A7DCC6-0066-4CEE-B276-C8C8EB1333BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37A7DCC6-0066-4CEE-B276-C8C8EB1333BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37A7DCC6-0066-4CEE-B276-C8C8EB1333BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37A7DCC6-0066-4CEE-B276-C8C8EB1333BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37A7DCC6-0066-4CEE-B276-C8C8EB1333BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {310302D4-134A-4794-BC5B-8D5DD87BCC08}
+	EndGlobalSection
+EndGlobal

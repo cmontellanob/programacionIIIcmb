@@ -15,9 +15,9 @@ namespace arboles
             String x = "";
             Arbol a = new Arbol ();
             a.insertar("F");
-            a.insertar("D");
             a.insertar("B");
             a.insertar("A");
+            a.insertar("D");
             a.insertar("C");
             a.insertar("E");
             a.insertar("H");
