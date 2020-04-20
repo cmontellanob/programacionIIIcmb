@@ -10,21 +10,17 @@ namespace Universidad
     {
         static void Main(string[] args)
         {
-            Person juan = new Person();
-            juan.PurchaceParkingTicket();
+            University univalle = University.getInstancia();
+            univalle.setDatos("Univalle",15654,TipoUniversidad.Privada,"http://univalle.edu");
 
-            Professor carlos = new Professor();
-            carlos.PurchaceParkingTicket();
+            univalle.getDatos();
 
-            Student kasandra = new Student();
-            kasandra.IsEligibaleToEnroll();
-
+            PersonFactory fabricapersonas = new PersonFactory();
+            Person carlos = fabricapersonas.getPersona("professor");
+            Person kasandra = fabricapersonas.getPersona("student");
             kasandra.PurchaceParkingTicket();
 
-            Address direccion = new Address();
-            direccion.Validate();
-
-
+           
         }
     }
 }

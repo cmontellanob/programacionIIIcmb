@@ -18,5 +18,10 @@ namespace Universidad
         {
 
         }
+
+        public override void PurchaceParkingTicket()
+        {
+           Console.Write("Pago");
+        }
     }
 }

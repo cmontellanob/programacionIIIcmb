@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace Universidad
 {
-    class Person
+    abstract class Person
     {
         private String name;
-        private int Phone;
+        private int phone;
         private Address email;
-        public void PurchaceParkingTicket()
-        {
-
-        }
+        abstract public void PurchaceParkingTicket();
+        
     }
 }

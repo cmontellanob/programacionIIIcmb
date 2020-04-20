@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Universidad
 {
-    class Professor:Person
+    class Administrador : Person
     {
-        private float salary;
-
         public override void PurchaceParkingTicket()
         {
             throw new NotImplementedException();
