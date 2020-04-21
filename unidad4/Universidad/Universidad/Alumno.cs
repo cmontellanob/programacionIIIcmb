@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Universidad
 {
-    class Administrador : Person
+    class Alumno : Persona
     {
-        public override void PurchaceParkingTicket()
+        public override String getDatos()
         {
-            throw new NotImplementedException();
+            return "Alumno: " + nombres + " " + apellidos;
         }
     }
 }

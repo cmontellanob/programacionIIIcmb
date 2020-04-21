@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Universidad
 {
-    class University
+    class Universidad
     {
         String nombre;
         int nit;
         TipoUniversidad tipouniversidad;
         String URL;
-        static University Instancia;
+        static Universidad Instancia;
 
-        private University()
+        private Universidad()
         {
         }
         public void setDatos(string nombre, int nit, TipoUniversidad tipouniversidad, string uRL)
@@ -29,12 +29,12 @@ namespace Universidad
         {
             return "Nombre: " + nombre + "nit:" + nit + "tipo:" + tipouniversidad.ToString() + "url:" + URL;
         }
-        public static University getInstancia()
+        public static Universidad getInstancia()
         {
-            if (Instancia==null)
+            if (Instancia == null)
             {
-                Instancia = new University();
-            } 
+                Instancia = new Universidad();
+            }
             return Instancia;
 
         }

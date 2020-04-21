@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Universidad
 {
-    class Professor:Person
+    class Teoria : Aula
     {
-        private float salary;
-
-        public override void PurchaceParkingTicket()
+        List<string> pupitres;
+        public override string getDatos()
         {
-            throw new NotImplementedException();
+            return "Teoria:" + codigo+"Ubicacion:"+ubicacion;
+
         }
     }
 }
