@@ -46,12 +46,14 @@
     <Compile Include="Alumno.cs" />
     <Compile Include="Aula.cs" />
     <Compile Include="Computadora.cs" />
+    <Compile Include="DiscoDuro.cs" />
     <Compile Include="Docente.cs" />
     <Compile Include="FabricaAbstracta.cs" />
     <Compile Include="FabricaAulas.cs" />
     <Compile Include="FabricaPersonas.cs" />
     <Compile Include="Laboratorio.cs" />
     <Compile Include="Persona.cs" />
+    <Compile Include="Procesador.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tamano.cs" />

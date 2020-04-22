@@ -1,16 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Universidad
 {
     class FabricaPersonas: FabricaAbstracta
     {
-        
-            public Aula getAula(string Tipo)
-            {
-                throw new NotImplementedException();
-            }
+        public Aula getAula(string Tipo, List<Computadora> lista)
+        {
+            throw new NotImplementedException();
+        }
 
-            public Persona getPersona(string Tipo)
+        public Persona getPersona(string Tipo)
             {
                 switch (Tipo)
                 {

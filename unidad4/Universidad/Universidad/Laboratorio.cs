@@ -8,11 +8,19 @@ namespace Universidad
 {
     class Laboratorio : Aula
     {
-        LinkedList<Computadora> listacomputadoras;
+        public List<Computadora> listacomputadoras;
+
+        public Laboratorio(List<Computadora> listacomputadoras)
+        {
+            this.listacomputadoras = listacomputadoras;
+        }
 
         public override string getDatos()
         {
-            return "Laboratorio:" + codigo + "Ubicacion:" + ubicacion;
+            String aux = "";
+            for (int i = 0; i < listacomputadoras.Count; i++)
+                aux = aux + listacomputadoras.ElementAt(i);
+            return "Laboratorio:" + codigo + "Ubicacion:" + ubicacion+aux;
 
         }
     }
