@@ -12,7 +12,7 @@ namespace Parqueos
         Ubicacion ubicacion;
         double costo;
         int capacidad;
-        private Puesto[] puestos;
+        private ProxyPuestos[] puestos;
 
         public Parqueo(string nombre, Ubicacion ubicacion, double costo, int capacidad)
         {
@@ -20,10 +20,10 @@ namespace Parqueos
             this.ubicacion = ubicacion;
             this.costo = costo;
             this.capacidad = capacidad;
-            this.puestos = new Puesto[capacidad];
+            this.puestos = new ProxyPuestos[capacidad];
             for (int i = 0; i < this.puestos.Count(); i++)
             {
-                this.puestos[i] = new Puesto(i);
+                this.puestos[i] = new ProxyPuestos(i);
             }
         }
         private int getIndicePuesto()
@@ -96,6 +96,10 @@ namespace Parqueos
         public override string ToString()
         {
             return "Parqueo: "+nombre +" "+ ubicacion;
+        }
+        public void getHistorial(int indice)
+        {
+            puestos[indice].getHitorial();
         }
     }
 }

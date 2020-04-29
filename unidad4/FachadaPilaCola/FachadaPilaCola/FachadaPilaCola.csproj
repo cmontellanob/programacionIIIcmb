@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C57DD227-32C1-466D-B4DD-A1761AA1CBA1}</ProjectGuid>
+    <ProjectGuid>{51F18327-A9D8-4829-8A8B-FC4E6F1BBC1C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Parqueos</RootNamespace>
-    <AssemblyName>Parqueos</AssemblyName>
+    <RootNamespace>FachadaPilaCola</RootNamespace>
+    <AssemblyName>FachadaPilaCola</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,14 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="APuesto.cs" />
-    <Compile Include="Auto.cs" />
-    <Compile Include="Parqueo.cs" />
+    <Compile Include="Cola.cs" />
+    <Compile Include="Fachada.cs" />
+    <Compile Include="Pila.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ProxyPuestos.cs" />
-    <Compile Include="Puesto.cs" />
-    <Compile Include="Ubicacion.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

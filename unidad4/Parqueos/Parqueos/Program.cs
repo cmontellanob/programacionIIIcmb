@@ -17,7 +17,7 @@ namespace Parqueos
             solar.ingresarAuto(Color.negro, Marca.Toyota, Tipo.auto, "2178-UPX");
             solar.ingresarAuto(Color.azul, Marca.Nissan, Tipo.vagonenta, "1138-TAI");
 
-            while (opcion != 4)
+            while (opcion != 5)
             {
                 Console.Clear();
                 Console.WriteLine("************************************************");
@@ -27,7 +27,9 @@ namespace Parqueos
                 Console.WriteLine("1. Ingresar al Parqueo");
                 Console.WriteLine("2. Salir del Parqueo");
                 Console.WriteLine("3. Mostrar Parqueo");
-                Console.WriteLine("4. Salir");
+                Console.WriteLine("4. Historial de Funcionamiento");
+
+                Console.WriteLine("5. Salir");
 
                 opcion = int.Parse(Console.ReadLine());
                 switch (opcion)
@@ -62,6 +64,12 @@ namespace Parqueos
                         break;
                     case 3:
                         solar.getDatos();
+                        Console.ReadKey();
+                        break;
+                    case 4:
+                        Console.WriteLine("introduzca el nrode puesto del cual obtener el historial");
+                        int indice = int.Parse(Console.ReadLine());
+                        solar.getHistorial(indice);
                         Console.ReadKey();
                         break;
 
