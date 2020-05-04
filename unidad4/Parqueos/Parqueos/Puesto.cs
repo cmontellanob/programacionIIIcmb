@@ -2,31 +2,39 @@
 
 namespace Parqueos
 {
-    class Puesto:APuesto
+    class Puesto:IPuesto
     {
-       
+        protected int numero;
+        protected Auto auto;
+        protected DateTime inicio;
+        protected DateTime fin;
+
+        public Auto getAuto()
+        {
+            return auto;
+        }
         public Puesto(int numero)
         {
             this.numero = numero;
         }
 
-      
-
-        public override string ingresarAuto(Auto auto)
+         public string ingresarAuto(Auto auto)
         {
             this.auto = auto;
             inicio = DateTime.Now;
             return inicio.ToLongDateString();
         }
 
-   
-
-        public override double salirAuto()
+        public double salirAuto()
         {
             this.auto = null;
             fin = DateTime.Now;
             TimeSpan total = fin - inicio;
             return total.TotalHours;
+        }
+        public Boolean estaOcupado()
+        {
+            return (this.auto != null);
         }
     }
 }
