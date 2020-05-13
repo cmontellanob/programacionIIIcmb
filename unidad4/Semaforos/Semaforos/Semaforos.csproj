@@ -4,15 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{152770BC-49F9-45A3-BC4B-20A813D6151F}</ProjectGuid>
+    <ProjectGuid>{999BD42E-A59B-475F-98B9-11E0F5F003A3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CompararMetodosOrdenacion</RootNamespace>
-    <AssemblyName>CompararMetodosOrdenacion</AssemblyName>
+    <RootNamespace>Semaforos</RootNamespace>
+    <AssemblyName>Semaforos</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,8 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Amarillo.cs" />
+    <Compile Include="Estado.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rojo.cs" />
+    <Compile Include="Semaforo.cs" />
+    <Compile Include="Verde.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

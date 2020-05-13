@@ -4,15 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{152770BC-49F9-45A3-BC4B-20A813D6151F}</ProjectGuid>
+    <ProjectGuid>{FD166CA7-0A97-413E-B8AA-943DC45823FE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CompararMetodosOrdenacion</RootNamespace>
-    <AssemblyName>CompararMetodosOrdenacion</AssemblyName>
+    <RootNamespace>Examen</RootNamespace>
+    <AssemblyName>Examen</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Examen.cs" />
+    <Compile Include="Pregunta.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
