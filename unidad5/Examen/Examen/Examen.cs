@@ -36,7 +36,7 @@ namespace Examen
                 }
             }
             Console.WriteLine(" termino el examen su calificacion es {0}",calificacion);
-            Console.ReadKey();
+           
             
         }
         public void contar()
@@ -53,8 +53,8 @@ namespace Examen
                  
                 }
             }
-            Console.WriteLine("su tiemppo se termino");
-            
+            Console.WriteLine(" termino su tiempo su calificacion es {0}", calificacion);
+
         }
 
 
