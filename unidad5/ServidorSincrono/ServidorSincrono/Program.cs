@@ -55,7 +55,7 @@ namespace ServidorSincrono
                     Console.WriteLine("Texto recibido: {0}", data);
 
                     // Prepara los datos para responder  al cliente.  
-                    byte[] msg = Encoding.ASCII.GetBytes(data);
+                    byte[] msg = Encoding.ASCII.GetBytes(data+"De Regreso");
 
                     handler.Send(msg);
                     handler.Shutdown(SocketShutdown.Both);

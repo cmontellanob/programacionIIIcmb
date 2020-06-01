@@ -22,7 +22,7 @@ namespace ClienteSincrono
                 IPAddress ipAddress = ipHostInfo.AddressList[0];
 //               IPEndPopPnt remoteEP = new IPEndPoint(ipAddrPAdress.Paress, 11000);
 
-                IPEndPoint remoteEP = new IPEndPoint(IPAddress.Parse("192.168.50.85"), 11000);
+                IPEndPoint remoteEP = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 11000);
 
                 // Crear un socket TCP/IP  .  
                 Socket sender = new Socket(AddressFamily.InterNetwork,SocketType.Stream, ProtocolType.Tcp);
