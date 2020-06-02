@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<TextView
+		android:text="Introduzca Letra"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/tvILntroduzca" />
+	<EditText
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/tvILntroduzca"
+		android:id="@+id/txtLetra" />
+	<Button
+		android:text="Enviar Letra"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/txtLetra"
+		android:id="@+id/btnenviar" />
+	<TextView
+		android:text="Introduzca Palabra"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/btnenviar"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/tvLIntroduzcaPalabra" />
+	<EditText
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/tvLIntroduzcaPalabra"
+		android:id="@+id/txtPalabra" />
+	<Button
+		android:text="Enviar Palabra"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/txtPalabra"
+		android:id="@+id/btnenviarPalabra" />
+
+	<TextView
+		android:text="-"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/btnenviarPalabra"
+		android:id="@+id/lblResultado" />
+	<ImageView
+		android:src="#ff304ffe"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/lblResultado"
+		android:id="@+id/imgResultado"/>
+		</RelativeLayout>
